@@ -199,7 +199,7 @@
         "USDZWL":322.355011
     }
 }
-// JSON quotes 목록의 USDKRW이 KRW/USD 환율, USD/JPN이 JPN/USD 환율, USD/PHP가 PHP/USD 환율입니다. 이 환율 정보를 이용해서 환율 계산을 하면 됩니다.
+// JSON quotes 목록의 USDKRW이 KRW/USD 환율, USD/JPY이 JPY/USD 환율, USD/PHP가 PHP/USD 환율입니다. 이 환율 정보를 이용해서 환율 계산을 하면 됩니다.
 ```
 
 
