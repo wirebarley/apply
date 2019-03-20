@@ -5,7 +5,7 @@
  <img src="https://github.com/wirebarley/apply/blob/master/images/coding_test_mobile1.png">
 </kbd>
 <kbd>
- <img src="https://github.com/wirebarley/apply/blob/master/images/coding_test_mobile3.png">
+ <img src="https://github.com/wirebarley/apply/blob/master/images/coding_test_mobile4.png">
 </kbd>
 
 - 송금국가는 미국으로 고정입니다. 통화는 미국달러(USD)입니다. 
