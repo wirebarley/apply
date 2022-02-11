@@ -1,12 +1,13 @@
 # 지원하신 분야의 앱으로 다음과 같은 환율 계산 기능을 만듭니다.
 첫화면은 다음과 같습니다.  
 
-<kbd>
- <img src="https://github.com/wirebarley/apply/blob/master/images/coding_test_mobile1.png">
-</kbd>
-<kbd>
- <img src="https://github.com/wirebarley/apply/blob/master/images/coding_test_mobile4.png">
-</kbd>
+|   |    | 
+| --- | --- | 
+|<kbd><img src="https://github.com/wirebarley/apply/blob/master/images/coding_test_mobile1.png"></kbd>|<kbd><img src="https://github.com/wirebarley/apply/blob/master/images/coding_test_mobile4.png"></kbd>|
+
+
+
+<br>
 
 - 송금국가는 미국으로 고정입니다. 통화는 미국달러(USD)입니다. 
 - 수취국가는 한국, 일본, 필리핀 세 군데 중 하나를 여러가지 방법을 이용하여 선택합니다. 각각 통화는 KRW, JPY, PHP 입니다.
@@ -16,6 +17,8 @@
 - 환율정보는 https://currencylayer.com/ 의 무료 서비스를 이용해서 실시간으로 가져와야 합니다. 
 - 새로운 무료 계정을 등록해서 API 키를 받아서 사용하면 됩니다. 샘플로 등록된 계정의 키를 예를 들면 다음과 같습니다.
 <http://www.apilayer.net/api/live?access_key=ee50cd7cc73c9b7a7bb3d9617cfb6b9c>
+
+<br>
 
 결과로 다음과 같이 JSON으로 된 환율정보를 돌려받습니다.
 
@@ -206,7 +209,48 @@
 - 송금액을 입력할때마다 수취금액을 계산하거나 별도로 '계산하기'' 버튼을 추가하여 선택된 수취국가와 그 환율, 그리고 송금액을 가지고 수취금액을 계산해서 하단에 보여주면 됩니다.
 - 수취금액이 0보다 작은 금액이거나 10,000 USD 보다 큰 금액, 혹은 바른 숫자가 아니라면 “송금액이 바르지 않습니다"라는 에러 메시지를 보여줍니다. 메시지는 팝업, 혹은 하단에 빨간 글씨로 나타나면 됩니다.
 
+--- 
 
-1. 사용언어는 Kotlin, Objective-c, Swift 3가지 언어중에 지원한 분야에 맞는 한가지를 선택해주세요.
-2. 테스트 코드를 만드시면 가산점이 있습니다.
-3. 작성한 코드는 github에 올리고 조회가능한 주소를 보내주면 됩니다.
+### 과제 진행 및 제출 안내
+
+<table>
+<thead>
+  <tr>
+    <th>
+     <img width="150" height="1">
+    </th>
+    <th align="center">
+     <img width="441" height="1">
+     <p>
+     Android
+     </p>
+   </th>
+    <th align="center">
+     <img width="441" height="1">
+     <p>
+     iOS
+     </p>
+   </th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td align="center"><b>사용 언어</b></td>
+    <td align="center">Kotlin</td>
+    <td align="center">Swift</td>
+  </tr>
+  <tr>
+    <td align="center"><b>조건</b></td>
+    <td align="left"></td>
+    <td align="left">1. UIKit 사용<br>2. 외부라이브러리 사용 금지<br>3. iOS Deployment Target : iOS 11.0</td>
+  </tr>
+  <tr>
+    <td align="center"><b>공통</b></td>
+    <td colspan="2">1. 테스트 코드를 작성하면 가산점이 있습니다.</td>
+  </tr>
+ <tr>
+  <td align="center"><b>제출</b></td>
+    <td colspan="2">작성한 코드는 github에 올리고 조회가능한 주소를 보내주면 됩니다.</td>
+ </tr>
+</tbody>
+</table>
