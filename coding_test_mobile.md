@@ -242,7 +242,7 @@
   <tr>
     <td align="center"><b>조건</b></td>
     <td align="left"></td>
-    <td align="left">1. UIKit 사용<br>2. 외부라이브러리 사용 금지<br>3. iOS Deployment Target : iOS 11.0</td>
+    <td align="left">1. UIKit 사용<br>2. 외부라이브러리 사용 금지<br>3. iOS Deployment Target : iOS 13.0</td>
   </tr>
   <tr>
     <td align="center"><b>공통</b></td>
