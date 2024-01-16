@@ -1,5 +1,5 @@
 # 지원하신 분야의 앱으로 다음과 같은 환율 계산 기능을 만듭니다.
-첫화면은 다음과 같습니다.  
+기본화면 구성은 다음과 같습니다.
 
 |   |    | 
 | --- | --- | 
@@ -17,6 +17,56 @@
 - 환율정보는 https://currencylayer.com/ 의 무료 서비스를 이용해서 실시간으로 가져와야 합니다. 
 - 새로운 무료 계정을 등록해서 API 키를 받아서 사용하면 됩니다. 샘플로 등록된 계정의 키를 예를 들면 다음과 같습니다.
 <http://www.apilayer.net/api/live?access_key=ee50cd7cc73c9b7a7bb3d9617cfb6b9c>
+- 환율은 앱이 시작될 때 한번 가져와서 계속 사용해도 되고, 혹은 수취국가가 변경될때 마다 API로 서버에 요청해서 새로운 환율 정보를 가져와도 됩니다. 
+- 송금액을 입력할때마다 수취금액을 계산하거나 별도로 '계산하기'' 버튼을 추가하여 선택된 수취국가와 그 환율, 그리고 송금액을 가지고 수취금액을 계산해서 하단에 보여주면 됩니다.
+- 수취금액이 0보다 작은 금액이거나 10,000 USD 보다 큰 금액, 혹은 바른 숫자가 아니라면 “송금액이 바르지 않습니다"라는 에러 메시지를 보여줍니다. 메시지는 팝업, 혹은 하단에 빨간 글씨로 나타나면 됩니다.
+
+--- 
+
+### 과제 진행 및 제출 안내
+
+<table>
+<thead>
+  <tr>
+    <th>
+     <img width="150" height="1">
+    </th>
+    <th align="center">
+     <img width="441" height="1">
+     <p>
+     Android
+     </p>
+   </th>
+    <th align="center">
+     <img width="441" height="1">
+     <p>
+     iOS
+     </p>
+   </th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td align="center"><b>사용 언어</b></td>
+    <td align="center">Kotlin</td>
+    <td align="center">Swift</td>
+  </tr>
+  <tr>
+    <td align="center"><b>조건</b></td>
+    <td align="left"></td>
+    <td align="left">1. UIKit 사용<br>2. 외부라이브러리 사용 금지<br>3. iOS Deployment Target : iOS 13.0</td>
+  </tr>
+  <tr>
+    <td align="center"><b>공통</b></td>
+    <td colspan="2">1. 테스트 코드를 작성하면 가산점이 있습니다. <br>2. 외부코드 사용 시 출처를 주석으로 남겨주세요.</td>
+  </tr>
+ <tr>
+  <td align="center"><b>제출</b></td>
+    <td colspan="2">작성한 코드는 github에 올리고 조회가능한 주소를 보내주면 됩니다.</td>
+ </tr>
+</tbody>
+</table>
+
 
 <br>
 
@@ -202,55 +252,3 @@
 }
 // JSON quotes 목록의 USDKRW이 KRW/USD 환율, USD/JPY이 JPY/USD 환율, USD/PHP가 PHP/USD 환율입니다. 이 환율 정보를 이용해서 환율 계산을 하면 됩니다.
 ```
-
-
-- 환율은 앱이 시작될 때 한번 가져와서 계속 사용해도 되고, 
-- 혹은 수취국가가 변경될때 마다 API로 서버에 요청해서 새로운 환율 정보를 가져와도 됩니다. 
-- 송금액을 입력할때마다 수취금액을 계산하거나 별도로 '계산하기'' 버튼을 추가하여 선택된 수취국가와 그 환율, 그리고 송금액을 가지고 수취금액을 계산해서 하단에 보여주면 됩니다.
-- 수취금액이 0보다 작은 금액이거나 10,000 USD 보다 큰 금액, 혹은 바른 숫자가 아니라면 “송금액이 바르지 않습니다"라는 에러 메시지를 보여줍니다. 메시지는 팝업, 혹은 하단에 빨간 글씨로 나타나면 됩니다.
-
---- 
-
-### 과제 진행 및 제출 안내
-
-<table>
-<thead>
-  <tr>
-    <th>
-     <img width="150" height="1">
-    </th>
-    <th align="center">
-     <img width="441" height="1">
-     <p>
-     Android
-     </p>
-   </th>
-    <th align="center">
-     <img width="441" height="1">
-     <p>
-     iOS
-     </p>
-   </th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td align="center"><b>사용 언어</b></td>
-    <td align="center">Kotlin</td>
-    <td align="center">Swift</td>
-  </tr>
-  <tr>
-    <td align="center"><b>조건</b></td>
-    <td align="left"></td>
-    <td align="left">1. UIKit 사용<br>2. 외부라이브러리 사용 금지<br>3. iOS Deployment Target : iOS 13.0</td>
-  </tr>
-  <tr>
-    <td align="center"><b>공통</b></td>
-    <td colspan="2">1. 테스트 코드를 작성하면 가산점이 있습니다.</td>
-  </tr>
- <tr>
-  <td align="center"><b>제출</b></td>
-    <td colspan="2">작성한 코드는 github에 올리고 조회가능한 주소를 보내주면 됩니다.</td>
- </tr>
-</tbody>
-</table>
